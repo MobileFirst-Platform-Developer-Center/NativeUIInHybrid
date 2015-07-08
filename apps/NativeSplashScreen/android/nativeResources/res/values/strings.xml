@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    COPYRIGHT LICENSE: This information contains sample code provided in source code form. You may copy, modify, and distribute
+    these sample programs in any form without payment to IBM® for the purposes of developing, using, marketing or distributing
+    application programs conforming to the application programming interface for the operating platform for which the sample code is written.
+    Notwithstanding anything to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON AN "AS IS" BASIS AND IBM DISCLAIMS ALL WARRANTIES,
+    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY,
+    FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
+    INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
+    IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
+ -->
+<resources>
+
+    <string name="app_name">NativeSplashScreen</string>
+    <string name="push_notification_title">NativeSplashScreen</string>
+    <string name="InitiativeActivityText">This is the Initiative Activity View\nYou can put here an image, a video or whatever you like.\n\nTo start the application\npress the button below.</string>
+    <string name="InitiativeButtonText">Start Application</string>
+    
+    
+
+    <!-- General purpose strings -->
+    <string name="error">Error</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Settings Screen strings -->
+    <string name="worklightSettingsTitle">Worklight Settings</string>
+    <string name="summaryWLServerUrl">Change the server URL: http[s]://domain or IP address[:port][/context root]</string>
+    <string name="titleWLServerUrl">Server URL</string>
+    <string name="networkSettingsTitleWLServerUrl">Network Settings</string>
+    <string name="OKTitleWLServerUrl">OK</string>
+    <string name="titleInvalidWLServerUrl">Invalid URL</string>
+    <string name="errorInvalidWLServerUrl">%1$s is not a valid URL. Valid format is http[s]://domain or IP address[:port][/context root]</string>
+    <string name="serverAddress">Server Address</string>
+    <string name="changeServerAddress">Change server URL</string>
+
+    <!-- Settings Screen: Web Resources category -->
+    <string name="wlWebResourcesCategory">Web Resources</string>
+    <string name="wlAppIdTitle">App ID</string>
+    <string name="wlAppVersionTitle">App Version</string>
+    <string name="downloadingWebResourcesMessage">Downloading application resources (progress in kilobytes)</string>
+
+    <!-- Direct Update -->
+    <string name="directUpdateDownloadingMessage">Downloading application update (progress in kilobytes)</string>
+    <string name="kb">%1$d/%2$d kb</string>
+
+    <!-- Worklight initialization errors -->
+    <string name="worklightInitInternalError">The application has encountered an internal error. Reinstall the application and try again.</string>
+    <string name="worklightInitNotEnoughSpace">Application installation has failed because there is no sufficient storage space available. Free %1$s MB and relaunch the application</string>
+    <string name="title_activity_initiative">InitiativeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

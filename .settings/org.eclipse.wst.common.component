@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="NativeUIInHybrid">
+        <wb-resource deploy-path="/" source-path="/apps/NativeSplashScreen/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/NativeSplashScreen/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/NativeTicker/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/NativeTicker/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/SendAction/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/SendAction/iphone"/>
+        <property name="context-root" value="NativeUIInHybrid"/>
+    </wb-module>
+</project-modules>
