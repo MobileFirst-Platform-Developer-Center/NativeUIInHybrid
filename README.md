@@ -1,13 +1,20 @@
 IBM MobileFirst Platform Foundation
 ===
-### Sample Name
+### Adding native UI elements to hybrid applications
 
 
 ### Usage
-Follow the instructions in the tutorials listed below.
+Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
+**iOS**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/adding-native-functionality/ios-adding-native-ui-elements-hybrid-applications/
 
+**Android**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/adding-native-functionality/android-adding-native-ui-elements-hybrid-applications/
+
+**Windows Phone 8**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/adding-native-functionality/wp8-adding-native-ui-elements-hybrid-applications/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1
