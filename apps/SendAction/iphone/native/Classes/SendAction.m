@@ -11,7 +11,7 @@
  
  */
 #import "SendAction.h"
-#import "WLWebFrameworkInitResult.h"
+#import <IBMMobileFirstPlatformFoundationHybrid/IBMMobileFirstPlatformFoundationHybrid.h>
 #import "HybridScreenViewController.h"
 #import "ViewController.h"
 

@@ -13,7 +13,7 @@
 
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
-#import "WL.h"
+#import <IBMMobileFirstPlatformFoundationHybrid/IBMMobileFirstPlatformFoundationHybrid.h>
 
 @interface ViewController ()<MKMapViewDelegate, WLActionReceiver>
 @property (weak, nonatomic) IBOutlet MKMapView *map;

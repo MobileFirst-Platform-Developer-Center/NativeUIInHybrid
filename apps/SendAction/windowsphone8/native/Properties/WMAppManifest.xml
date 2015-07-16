@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">  
+    <DefaultLanguage xmlns="" code="en"></DefaultLanguage>  
+    <!--  Sample ProductID = {dc34eee1-b946-4ab2-a93a-aa794c2e5618} -->  
+    <App xmlns="" ProductID="{513c6ceb-df25-465b-ab4e-809e8cdfb9f8}" Title="SendAction" RuntimeType="Silverlight" Version="1.0" Genre="apps.normal" Author="application's author" Description="SendAction" Publisher="application's author" PublisherID="{134b068d-c110-4011-b3ce-84e5281e149a}">  
+        <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>  
+        <Capabilities> 
+            <Capability Name="ID_CAP_NETWORKING"/>  
+            <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>  
+            <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>  
+            <Capability Name="ID_CAP_SENSORS"/>  
+            <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>  
+            <Capability Name="ID_CAP_LOCATION"/>  
+            <Capability Name="ID_CAP_IDENTITY_DEVICE"/> 
+        </Capabilities>  
+        <Tasks> 
+            <DefaultTask Name="_default" NavigationPage="MainPage.xaml"/> 
+        </Tasks>  
+        <Tokens> 
+            <PrimaryToken TokenID="projectNameToken" TaskName="_default"> 
+                <TemplateFlip> 
+                    <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>  
+                    <Count>0</Count>  
+                    <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>  
+                    <Title>SendAction</Title>  
+                    <BackContent/>  
+                    <BackBackgroundImageURI/>  
+                    <BackTitle/>  
+                    <DeviceLockImageURI/>  
+                    <HasLarge>false</HasLarge> 
+                </TemplateFlip> 
+            </PrimaryToken> 
+        </Tokens>  
+        <ScreenResolutions> 
+            <ScreenResolution Name="ID_RESOLUTION_WVGA"/>  
+            <ScreenResolution Name="ID_RESOLUTION_WXGA"/>  
+            <ScreenResolution Name="ID_RESOLUTION_HD720P"/> 
+        </ScreenResolutions> 
+    </App> 
+</Deployment>

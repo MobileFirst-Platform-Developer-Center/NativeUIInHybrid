@@ -11,8 +11,8 @@
  
  */
 
-#import "WLAppDelegate.h"
-#import "WL.h"
+#import <IBMMobileFirstPlatformFoundationHybrid/IBMMobileFirstPlatformFoundationHybrid.h>
+
 
 @interface MyAppDelegate : WLAppDelegate <WLInitWebFrameworkDelegate> {
     

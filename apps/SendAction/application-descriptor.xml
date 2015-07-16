@@ -8,7 +8,7 @@
     FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT. IBM SHALL NOT BE LIABLE FOR ANY DIRECT,
     INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF THE SAMPLE SOURCE CODE.
     IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE CODE.
- --><application xmlns="http://www.worklight.com/application-descriptor" id="SendAction" platformVersion="6.3.0.00.20141110-2213">
+ --><application xmlns="http://www.worklight.com/application-descriptor" id="SendAction" platformVersion="7.1.0.00.20150714-1210">
     <displayName>SendAction</displayName>
     <description>SendAction</description>
     <author>

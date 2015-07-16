@@ -10,7 +10,7 @@
  */
 
 #import "NativeSplashScreen.h"
-#import "WLWebFrameworkInitResult.h"
+#import <IBMMobileFirstPlatformFoundationHybrid/IBMMobileFirstPlatformFoundationHybrid.h>
 #import "Cordova/CDVViewController.h"
 #import "PageViewController.h"
 

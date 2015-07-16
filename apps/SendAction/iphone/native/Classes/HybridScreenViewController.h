@@ -12,7 +12,7 @@
  */
 
 #import "Cordova/CDVViewController.h"
-#import "WL.h"
+#import <IBMMobileFirstPlatformFoundationHybrid/IBMMobileFirstPlatformFoundationHybrid.h>
 
 @interface HybridScreenViewController : CDVViewController
 

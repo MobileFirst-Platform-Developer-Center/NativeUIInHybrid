@@ -55,3 +55,6 @@ derby.log
 #
 # END mfp-gitignore rules
 #
+apps/SendAction/android/native
+apps/SendAction/iphone/native/Frameworks
+xcuserdata

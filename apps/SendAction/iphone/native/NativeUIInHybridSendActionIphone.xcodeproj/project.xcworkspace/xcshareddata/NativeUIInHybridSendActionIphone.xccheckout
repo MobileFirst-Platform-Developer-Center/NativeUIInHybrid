@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A0455C8-1E29-478B-83DE-721290D7E410</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NativeUIInHybridSendActionIphone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D94383DCF7FD5B4FABC41CB9E75352EE4B1B6730</key>
+		<string>github.ibm.com:MFPSamples/NativeUIInHybrid.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>apps/SendAction/iphone/native/NativeUIInHybridSendActionIphone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D94383DCF7FD5B4FABC41CB9E75352EE4B1B6730</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.ibm.com:MFPSamples/NativeUIInHybrid.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D94383DCF7FD5B4FABC41CB9E75352EE4B1B6730</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D94383DCF7FD5B4FABC41CB9E75352EE4B1B6730</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NativeUIInHybrid</string>
+		</dict>
+	</array>
+</dict>
+</plist>
