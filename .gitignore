@@ -58,3 +58,5 @@ derby.log
 apps/SendAction/android/native
 apps/SendAction/iphone/native/Frameworks
 xcuserdata
+.jazzignore
+/pom.xml
