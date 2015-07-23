@@ -13,6 +13,7 @@
 function wlEnvInit(){
     wlCommonInit();
     // Environment initialization code goes here
+    var busyIndicator = new WL.BusyIndicator(null, {text : 'Loading...'});
     $('#SearchAddressDiv').hide();
     $('#ChangeSettingsDiv').show();
     getServerURL(); //get the current server URL - for initial usage.
@@ -23,7 +24,8 @@ function wlEnvInit(){
 
 	// SendAction to Native
     $('#changeServerURL').on('click', function(){
-    	WL.App.sendActionToNative("displayNativeScreen", { requestedNativeScreen: 'ServerURL'});
+    	busyIndicator.show();
+    	WL.App.sendActionToNative("displayNativeScreen", { requestedNativeScreen: 'ServerURL'});    	
 	});
 
     // ActionReceiver (from Native)
