@@ -1,16 +1,16 @@
-#Thu Jul 16 15:35:14 IDT 2015
-base.iphone=485085356
+#Sun Jul 26 15:40:03 IDT 2015
+base.iphone=2796033023
 encoding//apps/NativeSplashScreen/common/css/main.css=UTF-8
-base.android=2663232825
-jsonstore.windowsphone8=68437469
+base.android=2615791495
+jsonstore.windowsphone8=428316292
 encoding//apps/SendAction/common/css/main.css=UTF-8
 common.android=3998981046
 fipshttp.android=3517017756
 encoding//apps/NativeSplashScreen/iphone/css/main.css=UTF-8
-wl_version=7.1.0.00.20150714-1210
+wl_version=7.1.0.00
 eclipse.preferences.version=1
 encoding//apps/SendAction/iphone/css/main.css=UTF-8
-base.windowsphone8=3551481277
+base.windowsphone8=2059883997
 encoding/<project>=UTF-8
 jsonstore.android=2033967206
 analytics.ipad=2554529831
@@ -19,6 +19,6 @@ encoding//apps/NativeSplashScreen/common/index.html=UTF-8
 fipshttp.ipad=2487189175
 wl_compatible_version=
 encoding//apps/SendAction/common/index.html=UTF-8
-base.ipad=485085356
+base.ipad=2796033023
 analytics.iphone=2554529831
 analytics.android=963009885
