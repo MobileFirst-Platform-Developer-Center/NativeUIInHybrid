@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <phone:PhoneApplicationPage 
-    x:Class="SendActionTest2.MainPage"
+    x:Class="SendAction.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -36,7 +36,17 @@ limitations under the License.
 			<my:CordovaView HorizontalAlignment="Stretch" 
                    Margin="0,0,0,0"  
                    x:Name="CordovaView" 
-                   VerticalAlignment="Stretch" StartPageUri="/www/skinLoader.html"/>
-        </Grid>
+                   VerticalAlignment="Stretch" StartPageUri="/www/skinLoader.html">
+            
+            <!--TitlePanel contains the name of the application and page title-->
+            
+
+            </my:CordovaView>
+        <StackPanel Grid.Row="0" Margin="12,17,0,28" x:Name="my_Stack" Visibility="Collapsed">
+            <TextBlock Text="This is a Native Page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48"/>
+            <TextBox x:Name="Text" HorizontalAlignment="Left" Height="72" Margin="-10,-16,0,0" Text="" VerticalAlignment="Top" Width="466"/>
+            <Button x:Name="SaveURL" Content="SAVE SERVER URL" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="436" Click="SaveURL_Click"/>
+        </StackPanel>        
+    </Grid>
        
 </phone:PhoneApplicationPage>

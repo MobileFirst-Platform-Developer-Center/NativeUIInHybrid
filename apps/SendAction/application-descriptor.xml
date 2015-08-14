@@ -13,7 +13,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
---><application xmlns="http://www.worklight.com/application-descriptor" id="SendAction" platformVersion="7.1.0.00.20150714-1210">
+--><application xmlns="http://www.worklight.com/application-descriptor" id="SendAction" platformVersion="7.1.0.00.20150728-0630">
     <displayName>SendAction</displayName>
     <description>SendAction</description>
     <author>
@@ -42,6 +42,6 @@ limitations under the License.
         </security>
     </android>
     <windowsPhone8 version="1.0">
-        <uuid>513c6ceb-df25-465b-ab4e-809e8cdfb9f8</uuid>
+        <uuid>bc5cbfaa-4ba4-4060-93b3-30b5e405a419</uuid>
     </windowsPhone8>
 </application>

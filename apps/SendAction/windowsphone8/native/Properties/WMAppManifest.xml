@@ -3,7 +3,7 @@
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">  
     <DefaultLanguage xmlns="" code="en"></DefaultLanguage>  
     <!--  Sample ProductID = {dc34eee1-b946-4ab2-a93a-aa794c2e5618} -->  
-    <App xmlns="" ProductID="{513c6ceb-df25-465b-ab4e-809e8cdfb9f8}" Title="SendAction" RuntimeType="Silverlight" Version="1.0" Genre="apps.normal" Author="application's author" Description="SendAction" Publisher="application's author" PublisherID="{134b068d-c110-4011-b3ce-84e5281e149a}">  
+    <App xmlns="" ProductID="{bc5cbfaa-4ba4-4060-93b3-30b5e405a419}" Title="SendAction" RuntimeType="Silverlight" Version="1.0" Genre="apps.normal" Author="application's author" Description="SendAction" Publisher="application's author" PublisherID="{f4c5e21d-bd4d-4782-89ac-d2135859db1b}">  
         <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>  
         <Capabilities> 
             <Capability Name="ID_CAP_NETWORKING"/>  
@@ -15,7 +15,7 @@
             <Capability Name="ID_CAP_IDENTITY_DEVICE"/> 
         </Capabilities>  
         <Tasks> 
-            <DefaultTask Name="_default" NavigationPage="MainPage.xaml"/> 
+            <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume"/> 
         </Tasks>  
         <Tokens> 
             <PrimaryToken TokenID="projectNameToken" TaskName="_default"> 

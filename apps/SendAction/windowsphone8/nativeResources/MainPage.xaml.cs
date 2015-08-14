@@ -13,6 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +27,7 @@ using Microsoft.Phone.Shell;
 using Newtonsoft.Json.Linq;
 using IBM.Worklight;
 
-namespace SendActionTest2
+namespace SendAction
 {
     public partial class MainPage : PhoneApplicationPage
     {
@@ -36,7 +37,7 @@ namespace SendActionTest2
         {
             InitializeComponent();
             WL.createInstance(); //Create the instance of the ActionSender API's
-            myReceiver = new action();
+            myReceiver = new ActionReceiver(this);
             Loaded += PhoneAppPage_Loaded;
             WL.getInstance().addActionReceiver(myReceiver);
         }
@@ -55,30 +56,47 @@ namespace SendActionTest2
             });
         }
 
-        //*******************************************************************
-        // action : WLActionReceiver
-        // ******************************************************************
-        public class action : WLActionReceiver
+        public void navigateServerURL(String data)
         {
-            public void onActionReceived(string action, JObject data)
+            try
             {
-                if (action == "displayAddress")
+                Dispatcher.BeginInvoke(() =>
                 {
-                    Deployment.Current.Dispatcher.BeginInvoke(() =>
-                    {
-                        MessageBox.Show("Adress received from JS is: \n"+ data["address"]);
-                        this.sendData(this, null);
-                    });
-                }
+                    this.CordovaView.Margin = new Thickness(0, 400, 0, 0);
+                    this.my_Stack.Visibility = System.Windows.Visibility.Visible;
+                    Uri serveruri = WL.getInstance().getServerUrl();
+                    Text.Text = serveruri.ToString();
+                });
             }
-
-            protected void sendData(object sender, RoutedEventArgs e)
+            catch (Exception e)
             {
-                String myAction = "displayError";
-                JObject data = new JObject();               
-                data.Add("errorReason", "Data sent from native to JS!");               
-                WL.getInstance().sendActionToJS(myAction, data);
+                System.Diagnostics.Debug.WriteLine(e.StackTrace);
             }
+        }
+
+        private void SaveURL_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                String newServerURL = Text.Text;
+                Uri newUri = new Uri(newServerURL);
+                WL.getInstance().setServerUrl(newUri);
+
+                Dispatcher.BeginInvoke(() =>
+                {
+                    this.CordovaView.Margin = new Thickness(0, 0, 0, 0);
+                    this.my_Stack.Visibility = System.Windows.Visibility.Collapsed;
+                });
+            }
+            catch (Exception e1)
+            {
+                System.Diagnostics.Debug.WriteLine(e1.StackTrace);
+            }
+            
+            JObject returnData = new JObject();
+            returnData.Add("serverURLChanged", 1234);
+            WL.getInstance().sendActionToJS("refreshView", returnData);
+            //NavigationService.GoBack();
         }
    }
 }

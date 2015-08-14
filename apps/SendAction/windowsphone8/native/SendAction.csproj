@@ -13,7 +13,8 @@
     <AssemblyName>SendAction</AssemblyName>
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
     <SilverlightApplication>true</SilverlightApplication>
     <SupportedCultures>
@@ -74,6 +75,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ActionReceiver.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -107,122 +109,120 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    
     <Content Include="Images\appbar.back.rest.png" />
     <Content Include="Images\appbar.close.rest.png" />
     <Content Include="Images\appbar.feature.video.rest.png" />
     <Content Include="Images\appbar.next.rest.png" />
     <Content Include="Images\appbar.save.rest.png" />
     <Content Include="Images\appbar.stop.rest.png" />
-    
     <Content Include="SplashScreenImage.jpg" />
     <Content Include="config.xml" />
- 
-   	<!-- __start_worklight_web_resources__ -->
-<Content Include="www\default\css\main.css" />
-<Content Include="www\default\filelist" />
-<Content Include="www\default\images\icon.png" />
-<Content Include="www\default\images\thumbnail.png" />
-<Content Include="www\default\index.html" />
-<Content Include="www\default\js\initOptions.js" />
-<Content Include="www\default\js\main.js" />
-<Content Include="www\default\js\messages.js" />
-<Content Include="www\default\worklight\checksum.js" />
-<Content Include="www\default\worklight\cordova.js" />
-<Content Include="www\default\worklight\cordova_plugins.js" />
-<Content Include="www\default\worklight\messages\de\messages.json" />
-<Content Include="www\default\worklight\messages\es\messages.json" />
-<Content Include="www\default\worklight\messages\fr\messages.json" />
-<Content Include="www\default\worklight\messages\he\messages.json" />
-<Content Include="www\default\worklight\messages\it\messages.json" />
-<Content Include="www\default\worklight\messages\ja\messages.json" />
-<Content Include="www\default\worklight\messages\ko\messages.json" />
-<Content Include="www\default\worklight\messages\messages.json" />
-<Content Include="www\default\worklight\messages\pt-BR\messages.json" />
-<Content Include="www\default\worklight\messages\ru\messages.json" />
-<Content Include="www\default\worklight\messages\zh\messages.json" />
-<Content Include="www\default\worklight\messages\zh-TW\messages.json" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.battery-status\www\battery.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\Camera.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.console\www\console-via-logger.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.console\www\logger.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\Contact.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactAddress.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactField.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactFieldType.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactFindOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactName.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactOrganization.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\contacts.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.device\www\device.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.device-motion\www\Acceleration.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.device-motion\www\accelerometer.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.device-orientation\www\compass.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.device-orientation\www\CompassError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.device-orientation\www\CompassHeading.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.dialogs\www\notification.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\DirectoryEntry.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\DirectoryReader.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\Entry.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\File.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileEntry.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileReader.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileSystem.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\fileSystemPaths.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\fileSystems-roots.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\fileSystems.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileUploadOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileUploadResult.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileWriter.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\Flags.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\LocalFileSystem.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\Metadata.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\ProgressEvent.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\requestFileSystem.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\wp\FileUploadOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file-transfer\www\FileTransfer.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.file-transfer\www\FileTransferError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\Coordinates.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\geolocation.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\Position.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\PositionError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.globalization\www\globalization.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.globalization\www\GlobalizationError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.inappbrowser\www\inappbrowser.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media\www\Media.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media\www\MediaError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\capture.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureAudioOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureError.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureImageOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureVideoOptions.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\ConfigurationData.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\MediaFile.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\MediaFileData.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.network-information\www\Connection.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.network-information\www\network.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.splashscreen\www\splashscreen.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.statusbar\www\statusbar.js" />
-<Content Include="www\default\worklight\plugins\org.apache.cordova.vibration\www\vibration.js" />
-<Content Include="www\default\worklight\wljq.js" />
-<Content Include="www\default\worklight\worklight.css" />
-<Content Include="www\default\worklight\worklight.js" />
-<Content Include="www\skinLoader.html" />
-<!-- __end_worklight_web_resources__ -->
-   	
-   	<Content Include="Resources\worklight.xml" />
-   	<!-- __start_worklight_applicationbar_resources__ -->
-<!-- __end_worklight_applicationbar_resources__ -->
-<Content Include="wlclient.properties"/>
+    <!-- __start_worklight_web_resources__ -->
+    <Content Include="www\skinLoader.html" />
+    <Content Include="www\default\js\initOptions.js" />
+    <Content Include="www\default\js\main.js" />
+    <Content Include="www\default\js\messages.js" />
+    <Content Include="www\default\index.html" />
+    <Content Include="www\default\css\main.css" />
+    <Content Include="www\default\worklight\worklight.js" />
+    <Content Include="www\default\worklight\wljq.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.dialogs\www\notification.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.globalization\www\globalization.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.globalization\www\GlobalizationError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\ProgressEvent.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\fileSystems.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\Flags.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileSystem.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\LocalFileSystem.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\Metadata.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\fileSystemPaths.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileReader.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\File.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\fileSystems-roots.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileUploadOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\requestFileSystem.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileUploadResult.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\wp\FileUploadOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\DirectoryEntry.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileWriter.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileEntry.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\DirectoryReader.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\FileError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file\www\Entry.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.network-information\www\Connection.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.network-information\www\network.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file-transfer\www\FileTransfer.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.file-transfer\www\FileTransferError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.device-orientation\www\CompassHeading.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.device-orientation\www\CompassError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.device-orientation\www\compass.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.battery-status\www\battery.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media\www\Media.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media\www\MediaError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.splashscreen\www\splashscreen.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.inappbrowser\www\inappbrowser.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.statusbar\www\statusbar.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.console\www\logger.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.console\www\console-via-logger.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.vibration\www\vibration.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.device-motion\www\Acceleration.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.device-motion\www\accelerometer.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactField.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\contacts.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactFindOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactOrganization.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\Contact.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactFieldType.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactName.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.contacts\www\ContactAddress.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.device\www\device.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\Camera.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\MediaFileData.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureError.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\MediaFile.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureAudioOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\capture.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\ConfigurationData.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureVideoOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.media-capture\www\CaptureImageOptions.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\Coordinates.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\Position.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\geolocation.js" />
+    <Content Include="www\default\worklight\plugins\org.apache.cordova.geolocation\www\PositionError.js" />
+    <Content Include="www\default\worklight\checksum.js" />
+    <Content Include="www\default\worklight\worklight.css" />
+    <Content Include="www\default\worklight\cordova.js" />
+    <Content Include="www\default\worklight\cordova_plugins.js" />
+    <Content Include="www\default\worklight\messages\de\messages.json" />
+    <Content Include="www\default\worklight\messages\es\messages.json" />
+    <Content Include="www\default\worklight\messages\he\messages.json" />
+    <Content Include="www\default\worklight\messages\fr\messages.json" />
+    <Content Include="www\default\worklight\messages\zh-TW\messages.json" />
+    <Content Include="www\default\worklight\messages\ru\messages.json" />
+    <Content Include="www\default\worklight\messages\pt-BR\messages.json" />
+    <Content Include="www\default\worklight\messages\ja\messages.json" />
+    <Content Include="www\default\worklight\messages\zh\messages.json" />
+    <Content Include="www\default\worklight\messages\ko\messages.json" />
+    <Content Include="www\default\worklight\messages\messages.json" />
+    <Content Include="www\default\worklight\messages\it\messages.json" />
+    <Content Include="www\default\images\thumbnail.png" />
+    <Content Include="www\default\images\icon.png" />
+    <Content Include="www\default\filelist" />
+    <!-- __end_worklight_web_resources__ -->
+    <Content Include="Resources\worklight.xml" />
+    <!-- __start_worklight_applicationbar_resources__ -->
+    <!-- __end_worklight_applicationbar_resources__ -->
+    <Content Include="wlclient.properties">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-  	<Reference Include="Newtonsoft.Json">
+    <Reference Include="Newtonsoft.Json">
       <HintPath>.\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="worklight-windowsphone8">
@@ -232,7 +232,7 @@
       <HintPath>.\SharpCompress.dll</HintPath>
     </Reference>
     <Reference Include="WLWPNativeLib">
-          <HintPath>.\buildtarget\$(Platform)\WLWPNativeLib.dll</HintPath>
+      <HintPath>.\buildtarget\$(Platform)\WLWPNativeLib.dll</HintPath>
     </Reference>
     <Reference Include="WPCordovaClassLib">
       <HintPath>.\WPCordovaClassLib.dll</HintPath>
@@ -242,7 +242,7 @@
     <When Condition="Exists('buildtarget\$(Platform)\JSONStoreWP8Lib.dll')">
       <PropertyGroup>
         <DefineConstants>$(DefineConstants);USE_JSONSTORE</DefineConstants>
-  	  </PropertyGroup>
+      </PropertyGroup>
       <ItemGroup>
         <Content Include="buildtarget\$(Platform)\sqlite3.dll">
           <Link>sqlite3.dll</Link>

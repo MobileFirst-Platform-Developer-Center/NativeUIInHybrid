@@ -13,14 +13,17 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
---><buildSettings xmlns="http://www.ibm.worklight.com/build-settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	
-<iphone>
-        <minification includes="**" level="none"/>
-        <concatenation includes="**"/>
-    </iphone>
+--><buildSettings xmlns="http://www.ibm.worklight.com/build-settings">
     <android>
         <minification includes="**" level="none"/>
         <concatenation includes="**"/>
     </android>
+    <iphone>
+        <minification includes="**" level="none"/>
+        <concatenation includes="**"/>
+    </iphone>
+    <windowsPhone8>
+        <minification includes="**" level="none"/>
+        <concatenation includes="**"/>
+    </windowsPhone8>
 </buildSettings>

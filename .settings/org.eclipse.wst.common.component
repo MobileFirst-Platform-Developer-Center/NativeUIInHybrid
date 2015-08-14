@@ -6,6 +6,7 @@
         <wb-resource deploy-path="/" source-path="/apps/NativeTicker/iphone"/>
         <wb-resource deploy-path="/" source-path="/apps/SendAction/common"/>
         <wb-resource deploy-path="/" source-path="/apps/SendAction/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/SendAction/windowsphone8"/>
         <property name="context-root" value="NativeUIInHybrid"/>
     </wb-module>
 </project-modules>
