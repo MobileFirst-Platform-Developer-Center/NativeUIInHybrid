@@ -1,3 +1,18 @@
+/**
+* Copyright 2015 IBM Corp.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +44,7 @@ namespace SendAction
         /// </summary>
         public App()
         {
-            // Global handler for uncaught exceptions. 
+            // Global handler for uncaught exceptions.
             UnhandledException += Application_UnhandledException;
 
             // Show graphics profiling information while debugging.
@@ -41,7 +56,7 @@ namespace SendAction
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
 
-                // Enable non-production analysis visualization mode, 
+                // Enable non-production analysis visualization mode,
                 // which shows areas of a page that are being GPU accelerated with a colored overlay.
                 //Application.Current.Host.Settings.EnableCacheVisualization = true;
             }
@@ -51,10 +66,10 @@ namespace SendAction
 
             // Phone-specific initialization
             InitializePhoneApplication();
-            
+
             new WPNativeLib.Initializer();
             new HybridPluginInitializer.Initializer();//Hybrid plugin initializer from worklight-windowsphone8.dll
-            
+
             #if USE_JSONSTORE
             {
                 new JSONStoreWP8Lib.Initializer();
@@ -116,10 +131,10 @@ namespace SendAction
         {
             if (phoneApplicationInitialized)
                 return;
-			
+
 			//extend the splash screen until the worklight/webview is loaded
             WL.getInstance().showSplashScreen();
-			
+
             // Create the frame but don't set it as RootVisual yet; this allows the splash
             // screen to remain active until the application is ready to render.
             RootFrame = new PhoneApplicationFrame();
